@@ -1,0 +1,43 @@
+.service_details_container {
+  text-align: center;
+}
+
+.service_details_container p {
+  margin-bottom: 1em;
+}
+
+.servicedetails_header {
+  margin-bottom: 2em;
+}
+
+.servicedetails_header strong {
+  color: #F97A00;
+}
+
+.service_images {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+
+.service_images img {
+  max-height: 200px;
+  margin-right: 1em;
+}
+
+.service_details_container button {
+  border-radius: 8px;
+  background-color: #F97A00;
+  color: #fff;
+  border: none;
+  max-width: 200px;
+  min-height: 2.5rem;
+  width: 100%;
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.service_details_container button:hover {
+  background-color: #1c8a42;
+}
