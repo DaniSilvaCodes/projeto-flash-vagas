@@ -1,7 +1,7 @@
-.container{
-    min-width: 60vh;
-    padding: 1em 2em 3em;
-    max-width: 1500px;
-    margin: 0 auto;
-    /* background-color:black ; */
+.container {
+  margin-left: 240px; 
+  padding: 2rem;
+  min-height: 100vh;
+  background-color: #ffffff;
+  transition: margin-left 0.3s ease;
 }

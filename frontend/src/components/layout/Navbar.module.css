@@ -1,70 +1,83 @@
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1em 2em;
- background-color: #12171E;
-  color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.sidebar {
+  position: fixed;
   top: 0;
-  z-index: 1000;
+  left: 0;
+  width: 240px;
+  height: 100vh;
+  background-color: #111827; /* tom escuro elegante */
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1rem;
+  color: #fff;
+  /* z-index: 1000; */
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.2);
 }
 
-.navbar_logo {
+.logo {
   display: flex;
   align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
 }
 
-.navbar_logo img {
-  width: 48px;
-  margin-right: 1em;
-  transition: transform 0.3s ease;
+.logo img {
+  width: 40px;
+  height: 40px;
 }
 
-.navbar_logo img:hover {
-  transform: scale(1.1);
+.logo h2 {
+  font-size: 1.3rem;
+  color: #f9fafb;
+  font-weight: bold;
+  font-family: 'Segoe UI', sans-serif;
 }
 
-.navbar ul {
-  display: flex;
-  align-items: center;
+.nav_links {
   list-style: none;
-  gap: 1em;
-  margin: 0;
   padding: 0;
+  margin: 0;
+  flex: 1;
 }
 
-.navbar li {
-  position: relative;
-}
-
-.navbar a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: bold;
-  font-size: 1rem;
-  padding: 0.6em 1em;
+.nav_links li {
+  margin-bottom: 1.2rem;
+  padding: 0.6rem 1rem;
   border-radius: 8px;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-.navbar a:hover {
-  background-color: #f7c700;
-  color: #fff;
-  box-shadow: 0 0 10px rgba(22, 71, 157, 0.4);
-}
-
-.navbar_button {
-  all: unset;
-  color: #fff;
-  font-weight: bold;
+  transition: background 0.3s ease;
   cursor: pointer;
-  padding: 0.6em 1em;
-  border-radius: 8px;
-  transition: background-color 0.3s, color 0.3s;
 }
 
-.navbar_button:hover {
-  background-color: #f7c700;
+.nav_links li a {
+  text-decoration: none;
+  color: #d1d5db;
+  font-size: 1rem;
+  display: block;
+}
+
+.nav_links li:hover,
+.nav_links li a:hover {
+  background-color: #1f2937;
   color: #fff;
+}
+
+.logout {
+  background-color: #b91c1c;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.logout:hover {
+  background-color: #991b1b;
+}
+
+/* Conteúdo principal precisa se ajustar */
+body, #root {
+  /* display: flex; */
+}
+
+main {
+  margin-left: 240px; /* espaço para o sidebar */
+  padding: 2rem;
+  flex: 1;
 }

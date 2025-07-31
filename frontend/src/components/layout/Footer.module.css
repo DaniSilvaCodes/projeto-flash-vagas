@@ -1,9 +1,15 @@
-.footer{
-    height: 250px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #eee;
-    color: #444;
-    border-top: #666;
+footer {
+  /* position: fixed; fixo na parte inferior */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 50px 0;
+  z-index: 1000; /* para ficar na frente */
+}
+
+.text{
+    font-weight: 500;
 }
