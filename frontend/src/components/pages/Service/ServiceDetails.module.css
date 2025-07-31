@@ -11,7 +11,8 @@
 }
 
 .servicedetails_header strong {
-  color: #F97A00;
+  color: #ffff;
+  text-decoration:underline;
 }
 
 .service_images {

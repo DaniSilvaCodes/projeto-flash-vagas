@@ -4,7 +4,7 @@
   left: 0;
   width: 240px;
   height: 100vh;
-  background-color: #111827; /* tom escuro elegante */
+  background-color: #321509; /* tom escuro elegante */
   display: flex;
   flex-direction: column;
   padding: 2rem 1rem;
@@ -50,6 +50,7 @@
 .nav_links li a {
   text-decoration: none;
   color: #d1d5db;
+  font-weight: 600;
   font-size: 1rem;
   display: block;
 }
