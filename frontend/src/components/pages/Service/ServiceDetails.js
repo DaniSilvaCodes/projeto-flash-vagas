@@ -70,6 +70,9 @@ function ServiceDetails() {
                         <span className="bold">Endereço do serviço:</span> {service.location} 
                     </p>
                     <p>
+                        <span className="bold">Valor do serviço:</span> R$ {service.value} ou negocie!
+                    </p>
+                    <p>
                         <span className="bold">Data de publicação do serviço:</span> {service.date} 
                     </p>
                     {token ? (
